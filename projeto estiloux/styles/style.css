@@ -13,9 +13,14 @@ header {
 }
 
 header .grid-layout {
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgba(153, 205, 50, 0.253);
+color: greenyellow;
+width: 80%;
+margin: 0 auto;
+}
+
+header .header-flex {
+display: flex;
+justify-content: space-between;
 }
 
 header h1 {
@@ -29,4 +34,12 @@ header h1 #logoux {
     font-style: italic;
     font-weight: 600px;
     font-size: 30px;
+}
+
+header nav {
+    /* tecnica flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
 }
