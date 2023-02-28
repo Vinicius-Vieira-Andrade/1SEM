@@ -94,3 +94,14 @@ main .coluna2 article {
     margin-bottom: 20px;
 }
 
+
+/* footer */
+footer {
+    background-color: gray;
+    margin-top: 162px;
+}
+
+footer .grid-layout{
+
+}
+
