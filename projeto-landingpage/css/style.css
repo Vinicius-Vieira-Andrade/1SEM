@@ -1,0 +1,32 @@
+/* Reset css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-layout {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(0, 26, 255, 0.363);
+}
+
+.header-flex-box {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header {
+    background-color: #F9003D;
+    border: black solid 2px;
+    height: 60px;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
