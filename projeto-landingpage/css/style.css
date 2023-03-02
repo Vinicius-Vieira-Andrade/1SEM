@@ -1,19 +1,32 @@
-/* Reset css */
+/* import da fonte */
+
+@font-face {
+    font-family: Open_Sans;
+    src: url(../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttfSS);
+}
+
+@font-face {
+    font-family: Bebas_Neue;
+    src: url(../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
 
 * {
     margin: 0;
+    /* Reset css */
     padding: 0;
     box-sizing: border-box;
 }
 
+body {}
+
 .grid-layout {
-    width: 80%;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
     margin: 0 auto;
-    background-color: rgba(0, 26, 255, 0.363);
 }
 
-.header-flex-box {
-    height: 60px;
+header .header-flex-box {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -21,12 +34,23 @@
 
 header {
     background-color: #F9003D;
-    border: black solid 2px;
     height: 60px;
 }
 
-header a {
-    color: #FFFFFF;
+header nav {
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    padding: 15px 25px;
+    font-family: "Bebas_Neue";
+    font-size: 18px;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
+
+header nav a:hover {}
