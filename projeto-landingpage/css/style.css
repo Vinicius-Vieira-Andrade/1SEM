@@ -216,7 +216,21 @@
     }
 
 
-    #endereco {}
+    #endereco {
+        background-image: url(../assets/imagem-fundo-endereco.png);
+        background-size: cover;
+
+        color: #ffffff;
+        width: auto;
+        height: 598px;
+    }
+
+    #endere {
+        color: #FFAF00;
+        font-size: 64px;
+        margin: 0;
+        padding: 0;
+    }
 
 
 
