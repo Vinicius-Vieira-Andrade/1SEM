@@ -230,6 +230,66 @@
         font-size: 64px;
         margin: 0;
         padding: 0;
+        font-family: "Bebas_Neue";
+        letter-spacing: 1px;
+        padding-top: 50px;
+        padding-left: ;
+    }
+
+    #p-endere {
+        color: #A259F7;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 24px;
+        border: #340B65 2px solid;
+        background-color: #010010;
+        width: 1100px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        padding-left: 70px;
+    }
+
+    /* #mapa {
+        position: relative;
+        
+
+        width: 309px;
+        height: 249px;
+
+    } */
+
+    .maps {
+        position: relative;
+        right: 200px;
+
+    }
+ 
+    .flex-endereço {
+        padding-top: 10px;
+        /* border: #FFAF00 1px solid; */
+        display: flex;
+        justify-content: center;
+        
+        
+
+
+    }
+
+    footer {
+        background-color: #F9003D;
+        height: 82px;
+    }
+
+    #footerr {
+        color: white;
+        font-family: "Open_Sans";
+        font-size: 18px;
+        /* border: #FFAF00 solid 1px; */
+        height: 82px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -256,7 +316,7 @@
             justify-content: center;
             align-items: center;
             background-color: #F9003D;
-            
+
             box-shadow: 10px -15px #2e28297c;
 
         }
