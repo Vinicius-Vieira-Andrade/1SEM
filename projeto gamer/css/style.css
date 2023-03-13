@@ -1,5 +1,18 @@
 /* import de fonts */
+@font-face {
+    font-family: inter;
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
 
+@font-face {
+    font-family: quicksand;
+    src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: titilium;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
 
 /* reset css*/
 * {
@@ -35,6 +48,7 @@ header .header-bottom {
     display: flex;
     justify-content: space-between;
 }
+
 /* mobile first */
 
 /* HEADER */
@@ -51,17 +65,39 @@ header {
     background-color: #1B1426;
 }
 
-header nav {
+header .header-bottom nav {
     position: fixed;
     top: 60px;
     left: 0;
-    width: 80vw;
-    height: 100vh;
-    background-color: gray;
-
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 80vw;
+    height: calc(100vh - 60px);
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    padding-bottom: 20px;
+
     /* display: none; */
+}
+
+header .header-bottom nav>a {
+    padding: 30px 0;
+    color: white;
+    font-size: 15px;
+    font-family: "inter";
+    text-decoration: none;
+    border-bottom: #F9AA01 2px solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+header .header-bottom nav a:last-of-type {
+    border-bottom: none;
 }
 
 header .menu-usuarios {
@@ -75,10 +111,15 @@ header .menu-usuarios {
     height: 29px;
 }
 
-.phone {
+header .header-bottom nav .midias-sociais {
     display: flex;
-}
+    justify-content: space-evenly;
+    margin-top: 75px;
+    /* position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%; */
 
-.email {
-    display: flex;
+    text-decoration: none;
+    /* border: 1px red solid; */
 }

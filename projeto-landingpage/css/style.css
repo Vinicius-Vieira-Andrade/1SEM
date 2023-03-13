@@ -268,12 +268,16 @@
         padding-top: 10px;
         /* border: #FFAF00 1px solid; */
         display: flex;
-        justify-content: center;
-        
-        
-
-
+        justify-content: space-between;
     }
+
+    .end-flex {
+        display: flex;
+        flex-direction: column;
+
+        border: #FFAF00 1px solid;
+    }
+
 
     footer {
         background-color: #F9003D;
