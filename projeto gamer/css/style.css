@@ -24,11 +24,19 @@
 /* classes genéricas */
 
 body {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 }
 
 header .header-bottom {
     height: 60px;
+}
+
+.mostrarLateral {
+    right: 0 !important;
+}
+
+.mostrar-menu {
+    left: 0 !important;
 }
 
 .alinhamento-between-center {
@@ -61,14 +69,21 @@ header .header-top {
 }
 
 header {
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
     height: 60px;
     background-color: #1B1426;
+}
+
+header .logo {
+    width: 86px;
 }
 
 header .header-bottom nav {
     position: fixed;
     top: 60px;
-    left: 0;
+    left: -80vw;
     display: flex;
     flex-direction: column;
     width: 80vw;
@@ -76,6 +91,8 @@ header .header-bottom nav {
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
     padding-bottom: 20px;
+
+    transition: left 0.5s;
 
     /* display: none; */
 }
@@ -100,8 +117,23 @@ header .header-bottom nav a:last-of-type {
 }
 
 header .menu-usuarios {
-    display: none;
+    position: fixed;
+    top: 60px;
+    right: -66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 170px;
+    width: 66px;
+
+    transition: right 0.5s;
+
+
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
 }
+
 
 .contatos {
     display: flex;
@@ -120,4 +152,10 @@ header .header-bottom nav .midias-sociais {
 
     text-decoration: none;
     /* border: 1px red solid; */
+}
+
+/* main */
+
+main .banner-principal {
+    background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1banner\ main.png);
 }

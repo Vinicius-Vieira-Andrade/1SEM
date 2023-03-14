@@ -51,17 +51,32 @@
 
 
                 <!-- menu hamburguer visivel apenas no mobile -->
-                <img src="assets/icons/Vectorhamburguer.svg" alt="menu que abre e fecha o menu de navegação no celular">
+                <img onclick="mostrarMenu()" src="assets/icons/Vectorhamburguer.svg"
+                    alt="menu que abre e fecha o menu de navegação no celular">
 
                 <!-- logotipo gamer -->
-                <img src="assets/images/logotipo-gamer.svg" alt="logotipo com controle de video game">
+                <img class="logo" src="assets/images/logotipo-gamer.svg" alt="logotipo com controle de video game">
 
                 <!-- menu três pontinhos visivel apenas no mobile -->
-                <img src="assets/icons/Vectorpontos.svg"
+                <img onclick="mostrarNavegar()" src="assets/icons/Vectorpontos.svg"
                     alt="menu de três pontos (reticências) que abre menu de usuário, compras e buscar">
 
+                <div class="menu-usuarios" id="menu-lateral">
+                    <a href="">
+                        <img src="assets/icons/Vectoruser.svg" alt="icone de usuario login">
+                    </a>
 
-                <nav class="menu">
+                    <a href="">
+                        <img src="assets/icons/Vectorcompras.svg" alt="icone de compras">
+                    </a>
+
+                    <a href="">
+                        <img src="assets/icons/Vectorbuscar.svg" alt="icone de pesquisa">
+                    </a>
+                </div>
+
+
+                <nav class="menu" id="menu">
                     <a href="">Início</a>
                     <a href="">Jogadores</a>
                     <a href="">Equipes</a>
@@ -92,12 +107,30 @@
                         </a>
                     </div>
                 </nav>
-
-
-
             </div>
         </div>
     </header>
+
+    <main>
+        <section class="banner-principal">
+            <div class="text-banner">
+                <h1>liga gamers</h1>
+                <p>sobre</p>
+            </div>
+        </section>
+    </main>
+ 
+    <!-- javascript abrir e fechar navegacao no menu hamburguer -->
+    <script>
+        function mostrarMenu() {
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+        }
+
+        function mostrarNavegar() {
+            document.getElementById("menu-lateral").classList.toggle("mostrarLateral")
+
+        }
+    </script>
 </body>
 
 </html>
